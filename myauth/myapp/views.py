@@ -120,4 +120,6 @@ class Logout(APIView):
         request.user.auth_token.delete()
         return Response(status=status.HTTP_200_OK)
 
+class TestView(APIView):
+    pass
 
